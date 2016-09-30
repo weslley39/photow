@@ -1,0 +1,25 @@
+<div class="core">
+  <!-- <md-content> -->
+    <div class="row">
+      <ng-camera
+        capture-message="Cheeeese!"
+        output-height="317"
+        output-width="422"
+        viewer-height="310"
+        viewer-width="392"
+        image-format="png"
+        jpeg-quality="50"
+        action-message="&nbsp;"
+        snapshot="ctrl.picture"
+        class="col-md-4"
+      ></ng-camera>
+
+      <span ng-repeat="image in ctrl.images | orderBy:'-'"">
+        <img ng-if="ctrl.images.length > 0" ng-src="{{image.image}}" alt="webcam picture" class="picture-took col-md-4">
+        <md-button class="md-fab md-mini" ng-click="ctrl.removeImage(image)" ng-if="ctrl.user.uid === 'dFrEyih87AUokSt94Wxuj8d6wwE2'">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </md-button>       
+      </span>
+    </div>
+  <!-- </md-content> -->
+</div>

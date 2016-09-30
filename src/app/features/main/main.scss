@@ -1,0 +1,68 @@
+.core {
+  padding-right    : 30px;
+  padding-left     : 40px;
+  padding-bottom   : 65px;
+  margin-top       : 0;
+  margin-bottom    : 0;
+  background-color : #000000;
+
+
+  .ng-camera {
+    display: inline-block;
+  }
+
+  #ng-camera-action {
+    position         : absolute;
+    margin-top       : -50px;
+    left             : 230px;
+    background-color : red;
+    border-radius    : 40px;
+    height           : 40px;
+    width            : 40px;
+    border           : 0;
+    outline          : 0;
+  }
+
+  .picture-took {
+    margin-top  : -4px;
+    margin-left : -3.5px;
+    width       : 395px;
+    height      : 306px;
+  }
+
+  .md-fab {
+    position         : absolute;
+    margin-left      : -50px;
+    margin-top       : 10px;
+    background-color : #c0392b;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .core {
+    margin     : 0;
+    padding    : 0;
+    margin-top : 0;
+  }
+
+  .picture-took {
+    width       : 379px !important;
+    height      : 286px !important;
+  }
+
+  #ng-camera-feed {
+    width       : 375px !important;
+    height      : 286px !important;
+  }
+
+  #ng-camera-feed {
+    video {
+      width  : 376px;
+      height : 362px;
+    }
+  }
+
+  #ng-camera-action {
+    left: 50% !important;
+  }
+}
