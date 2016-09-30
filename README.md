@@ -11,22 +11,22 @@ The first thing that you have to do is `npm install` in the root folder, after h
 First, you have to configure the firebase keys that you can get in the dashoboard of firebase when created your app, looks like this:
 
 ```
-<script>
-  // Initialize the Firebase SDK
-  var config = {
-    apiKey: '<your-api-key>',
-    authDomain: '<your-auth-domain>',
-    databaseURL: '<your-database-url>',
-    storageBucket: '<your-storage-bucket>'
-  };
-  firebase.initializeApp(config);
-</script>
+// Initialize the Firebase SDK
+var config = {
+  apiKey: '<your-api-key>',
+  authDomain: '<your-auth-domain>',
+  databaseURL: '<your-database-url>',
+  storageBucket: '<your-storage-bucket>'
+};
+firebase.initializeApp(config);
 ```
 
+You just need to replace the `config/config.js` file with the infos.
+
 **This project have some commands that you need to know:**
+
 `gulp serve` to launch a browser sync server on your source files
 `gulp build` to build an optimized version of your application in /dist
 `gulp test` to launch your unit tests with Karma
 `gulp test:auto` to launch your unit tests with Karma in watch mode
-
 
